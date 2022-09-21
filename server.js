@@ -9,7 +9,7 @@ app.use((req, res, next) => {
 
 app.get('.',(req,res)=>{
 
-  readFile('/home.html','utf8',(err,html)=>{
+  readFile('./home.html','utf8',(err,html)=>{
    
     if(err){
       response.status(500).send('Hors service')
